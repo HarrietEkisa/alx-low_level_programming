@@ -9,9 +9,9 @@ int main(void)
 int num;
 while (num < 10)
 {
-printif("%d", num);
+printf("%d", num);
 num += 1;
 }
-printif("\n");
+printf("\n");
 return (0);
 }
