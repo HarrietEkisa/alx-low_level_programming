@@ -7,7 +7,7 @@
 int main(void)
 {
 int num;
-while num(num < 10)
+while (num < 10)
 {
 printif("%d", num);
 num += 1;
