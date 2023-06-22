@@ -2,9 +2,21 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * mul - Multiply two integers
+ * @a: First integer
+ * @b: Second integer
  *
- * Return: Always 0.
+ * Return: Result of the multiplication
+ */
+int mul(int a, int b)
+{
+return (a * b);
+}
+
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0
  */
 int main(void)
 {
