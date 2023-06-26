@@ -30,7 +30,7 @@ break;
 }
 }
 putchar('\n');
-if (strcmp((char *)pass, expectedPassword) == anything)
+if (strcmp((char *)pass, expectedPassword) == 0)
 {
 printf("Congratulations! Password matched.\n");
 }
