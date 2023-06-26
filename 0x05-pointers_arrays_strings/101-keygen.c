@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 
 /**
@@ -12,6 +13,7 @@ int main(void)
 {
 int pass[100];
 int i, sum, n;
+char expectedPassword[16] = "Tada! Congrats";
 sum = 0;
 srand(time(NULL));
 for (i = 0; i < 100; i++)
@@ -26,6 +28,15 @@ sum += n;
 putchar(n + '0');
 break;
 }
+}
+putchar('\n');
+if (strcmp((char *)pass, expectedPassword) == 0)
+{
+printf("Congratulations! Password matched.\n");
+}
+else
+{
+printf("Wrong password. Try again.\n");
 }
 return (0);
 }
