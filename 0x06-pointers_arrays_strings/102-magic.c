@@ -1,6 +1,10 @@
 #include <stdio.h>
+
 /**
- * main - A program that prints "a[2] = 98", followed by a new line.
+ * main - Entry point of the program.
+ *
+ * This program modifies the value of a[2] indirectly using a pointer.
+ * It assigns the value 98 to a[2] and then prints it.
  *
  * Return: Always 0.
  */
@@ -12,15 +16,12 @@ int *p;
 a[2] = 1024;
 p = &n;
 /*
-* write your line of code here...
-* Remember:
-* - you are not allowed to use a
-* - you are not allowed to modify p
-* - only one statement
-* - you are not allowed to code anything else than this line of code
+* The line of code below uses pointer arithmetic to indirectly modify a[2].
+* We subtract 2 from the index of a[2] to get the correct offset from p.
+* Since p points to n, *(p - 2) will access the memory location of a[2].
+* Then we assign the value 98 to that memory location.
 */
-*(p + 5) = 98;
-/* ...so that this prints 98\n */
+*(p - 2) = 98;
 printf("a[2] = %d\n", a[2]);
 return (0);
 }
