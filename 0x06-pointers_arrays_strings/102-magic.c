@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - A program that prints "a[2] = 98", followed by a new line.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 int n;
